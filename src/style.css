@@ -4,8 +4,12 @@
   box-sizing: content-box;
 }
 
+:root {
+  --dflex: flex;
+}
+
 #container {
-  display: flex;
+  display: var(--dflex);
   flex-direction: column;
   justify-content: center;
   margin: 5% 10%;
@@ -18,7 +22,7 @@ button:hover {
 }
 
 .heading {
-  display: flex;
+  display: var(--dflex);
   justify-content: space-between;
   padding: 20px 40px;
 }
@@ -40,7 +44,7 @@ hr {
 }
 
 .add-new-todo {
-  display: flex;
+  display: var(--dflex);
   justify-content: space-between;
   padding: 20px 40px;
 }
@@ -63,7 +67,7 @@ hr {
 }
 
 .action {
-  display: flex;
+  display: var(--dflex);
   gap: 0 10px;
 }
 
@@ -78,7 +82,7 @@ hr {
 }
 
 #todo-list .todo {
-  display: flex;
+  display: var(--dflex);
   justify-content: space-between;
   padding: 20px 40px;
   align-items: center;
@@ -90,7 +94,7 @@ hr {
 }
 
 #todo-list .todo div {
-  display: flex;
+  display: var(--dflex);
   justify-content: space-between;
   gap: 15px;
   align-items: center;
